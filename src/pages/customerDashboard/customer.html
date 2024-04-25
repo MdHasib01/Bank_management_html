@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../output.css" />
+    <script
+      src="https://kit.fontawesome.com/697e661b3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background-image: url("../../../public/assets/admin-bg.png");
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-size: cover;
+      }
+      .footer {
+        background-color: #003cff;
+        color: white;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex justify-center items-center w-full">
+      <div class="content max-w-[1200px] w-full mt-[20px]">
+        <div class="flex justify-between">
+          <div class="flex flex-col items-center">
+            <i
+              class="border rounded rounded-full p-5 fa-solid fa-user text-[#fff] text-[100px]"
+            ></i>
+            <p id="customer_name" class="text-xl text-[#fff]">Customer Name</p>
+          </div>
+          <div class="flex flex-col">
+          
+              ><button id="logout"
+                class="py-2 px-5 bg-green-600 rounded font-bold my-2 text-[#fff] hover:bg-green-500"
+              >
+                Log out
+                <i class="fa-solid fa-right-from-bracket ml-2"></i></button
+            >
+            <button
+              class="py-2 px-5 bg-red-600 rounded font-bold my-2 text-yellow-400 hover:bg-red-500"
+            >
+              <i class="fa-solid fa-sack-dollar ml-2"></i> Balance
+            </button>
+          </div>
+        </div>
+        <!-- cards -->
+        <div class="bg-green-600 my-5 p-9 rounded flex justify-between mb-7">
+          <a href="../error/index.html">
+            <div
+              class="flex flex-col items-center rounded p-2 bg-red-200 hover:bg-red-100 hover:scale-105 duration-200 shadow-xl"
+            >
+              <i
+                class="fa-solid fa-sack-dollar text-5xl mb-2 text-blue-600"
+              ></i>
+              <p class="font-bold text-blue-600">Store Money</p>
+            </div>
+          </a>
+          <a href="../error/index.html">
+            <div
+              class="flex flex-col items-center rounded p-2 bg-red-200 hover:bg-red-100 hover:scale-105 duration-200 shadow-xl"
+            >
+              <i
+                class="fa-solid fa-money-bill-transfer text-5xl mb-2 text-blue-600"
+              ></i>
+              <p class="font-bold text-blue-600">Money Transfer</p>
+            </div>
+          </a>
+          <a href="../error/index.html">
+            <div
+              class="flex flex-col items-center rounded p-2 bg-red-200 hover:bg-red-100 hover:scale-105 duration-200 shadow-xl"
+            >
+              <i
+                class="fa-solid fa-dollar-sign text-5xl mb-2 text-blue-600"
+              ></i>
+              <p class="font-bold text-blue-600">Cash Withdraw</p>
+            </div>
+          </a>
+          <a href="../error/index.html">
+            <div
+              class="flex flex-col items-center rounded p-2 bg-red-200 hover:bg-red-100 hover:scale-105 duration-200 shadow-xl"
+            >
+              <i
+                class="fa-solid fa-hand-holding-dollar text-5xl mb-2 text-blue-600"
+              ></i>
+              <p class="font-bold text-blue-600">Request Money</p>
+            </div>
+          </a>
+        </div>
+        <div class="bg-red-600 my-2 p-9 rounded flex justify-between">
+          <a href="../error/index.html">
+            <div
+              class="flex flex-col items-center rounded p-2 bg-green-200 hover:bg-green-100 hover:scale-105 duration-200 shadow-xl w-[150px]"
+            >
+              <i
+                class="fa-solid fa-building-columns text-5xl mb-2 text-blue-600"
+              ></i>
+              <p class="font-bold text-blue-600">Bank A/C</p>
+            </div>
+          </a>
+          <a href="../error/index.html">
+            <div
+              class="flex flex-col items-center rounded p-2 bg-green-200 hover:bg-green-100 hover:scale-105 duration-200 shadow-xl w-[150px]"
+            >
+              <i
+                class="fa-solid fa-money-check text-5xl mb-2 text-blue-600"
+              ></i>
+              <p class="font-bold text-blue-600 ">Cards</p>
+            </div>
+          </a>
+          <a href="../error/index.html">
+            <div
+              class="flex flex-col items-center rounded p-2 bg-green-200 hover:bg-green-100 hover:scale-105 duration-200 shadow-xl w-[150px]"
+            >
+              <i
+                class="fa-solid fa-mobile-retro text-5xl mb-2 text-blue-600"
+              ></i>
+              <p class="font-bold text-blue-600">Mcash</p>
+            </div>
+          </a>
+          <a href="../error/index.html">
+            <div
+              class="flex flex-col items-center rounded p-2 bg-green-200 hover:bg-green-100 hover:scale-105 duration-200 shadow-xl w-[150px]"
+            >
+              <i
+                class="fa-solid fa-user-plus text-5xl mb-2 text-blue-600"
+              ></i>
+              <p class="font-bold text-blue-600">Open A/C</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer flex justify-center items-center">
+      <div class="max-w-[1100px] flex justify-between w-full">
+        <a href="../error/index.html"
+          ><button
+            class="duration-200 hover:translate-y-1 bg-green-500 p-2 rounded flex flex-col items-center mt-[-25px] mb-[20px] shadow-xl hover:bg-green-600 min-w-[90px]"
+          >
+            <i class="fa-regular fa-note-sticky text-5xl mb-2"></i>
+            <p>Statement</p>
+          </button></a
+        >
+        <a href="../error/index.html"
+          ><button
+            class="duration-200 hover:translate-y-1 bg-green-500 p-2 rounded flex flex-col items-center mt-[-25px] mb-[20px] shadow-xl hover:bg-green-600 min-w-[90px]"
+          >
+            <i class="fa-solid fa-hand-holding-dollar text-5xl mb-2"></i>
+            <p>Offer</p>
+          </button></a
+        >
+        <a href="../error/index.html"
+          ><button
+            class="duration-200 hover:translate-y-1 bg-orange-500 p-2 rounded flex flex-col items-center mt-[-25px] mb-[20px] shadow-xl hover:bg-orange-600 min-w-[90px]"
+          >
+            <i class="fa-solid fa-expand text-5xl mb-2"></i>
+            <p>Quick Pay</p>
+          </button></a
+        >
+        <a href="../error/index.html"
+          ><button
+            class="duration-200 hover:translate-y-1 bg-green-500 p-2 rounded flex flex-col items-center mt-[-25px] mb-[20px] shadow-xl hover:bg-green-600 min-w-[90px]"
+          >
+            <i class="fa-solid fa-location-dot text-5xl mb-2"></i>
+            <p>Location</p>
+          </button></a
+        >
+        <a href="../error/index.html"
+          ><button
+            class="duration-200 hover:translate-y-1 bg-green-500 p-2 rounded flex flex-col items-center mt-[-25px] mb-[20px] shadow-xl hover:bg-green-600 min-w-[90px]"
+          >
+            <i class="fa-solid fa-comments text-5xl mb-2"></i>
+            <p>FAQ</p>
+          </button></a
+        >
+      </div>
+    </footer>
+    <script type="module" src="../../../utils/logout.js"></script>
+    <script type="module" src="./customer.js"></script>
+  </body>
+</html>

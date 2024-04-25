@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Search</title>
+    <!-- Include Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-gray-100 p-8">
+    <div class="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6">
+      <h1 class="text-2xl font-bold mb-4">Customer Search</h1>
+      <!-- Search Input -->
+      <div class="flex items-center border border-gray-300 rounded-lg p-2">
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Search customers..."
+          class="flex-1 outline-none text-sm"
+        />
+        <button
+          onclick="searchCustomers()"
+          class="ml-2 bg-blue-500 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-600 focus:outline-none"
+        >
+          Search
+        </button>
+      </div>
+
+      <!-- Search Results -->
+      <div id="searchResults" class="mt-4"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

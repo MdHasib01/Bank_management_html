@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Customer</title>
+    <link rel="stylesheet" href="../../../output.css" />
+    <style>
+      body {
+        background-image: url("../../../public/assets/digital_bank.png");
+        background-repeat: no-repeat;
+
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body class="bg-blue-600 h-screen flex justify-center items-center">
+    <div class="max-w-[1200px]">
+      <div
+        class="border border-1 rounded-lg px-5 flex flex-col items-center shadow-lg bg-[rgba(51,102,255,0.5)]"
+      >
+        <h2 class="text-[#fff] font-bold text-[30px] my-5">
+          Add A New Customer
+        </h2>
+
+        <form id="signup">
+          <input
+            type="text"
+            placeholder="Enter Full Name"
+            class="p-2 rounded mb-3 min-w-[300px]"
+            id="name"
+            name="name"
+            required
+          />
+          <br />
+          <input
+            type="text"
+            placeholder="Enter Mobile No"
+            class="p-2 rounded mb-3 min-w-[300px]"
+            id="phone"
+            name="phone"
+            required
+          />
+          <br />
+          <input
+            type="password"
+            placeholder="Enter password"
+            class="p-2 rounded mb-3 min-w-[300px]"
+            id="password"
+            name="password"
+            required
+          />
+          <br />
+
+          <input
+            type="number"
+            placeholder="Enter age"
+            class="p-2 rounded mb-3 min-w-[300px]"
+            id="age"
+            name="age"
+          />
+          <br />
+          <input
+            type="email"
+            placeholder="Enter email"
+            class="p-2 rounded mb-3 min-w-[300px]"
+            id="email"
+            name="email"
+          />
+          <br />
+          <div class="flex justify-between items-center">
+            <p class="font-bold text-[#fff]">Select Gender:</p>
+            <select
+              id="gender"
+              name="gender"
+              class="min-w-[200px] p-2 rounded mb-3"
+            >
+              <option value="">Select gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+          <br />
+          <textarea
+            name="address"
+            id="address"
+            placeholder="Enter your address"
+            name="address"
+            class="p-2 rounded mb-3 min-w-[300px]"
+            rows="3"
+          ></textarea>
+
+          <br />
+
+          <button
+            class="bg-green-600 w-full py-3 rounded font-bold duration-400 hover:bg-green-400"
+            type="submit"
+            name="submit"
+          >
+            Add Customer
+          </button>
+        </form>
+        <div class="flex w-full justify-center items-center">
+          <button
+            id="back"
+            class="px-5 py-2 my-4 hover:bg-green-400 bg-green-500 rounded font-bold"
+            onclick="history.back()"
+          >
+            Back
+          </button>
+        </div>
+        <br />
+      </div>
+    </div>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
